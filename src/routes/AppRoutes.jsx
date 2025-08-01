@@ -7,16 +7,19 @@ import Cart from '../pages/Cart'
 import Contact from '../pages/Contact'
 import About from '../pages/About'
 import NotFound from '../pages/NotFound'
+import MainLayout from '../layouts/MainLayout'
 
 const AppRoutes = () => {
     return (
         <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/products' element={<ProductList />} />
-            <Route path='/products/:id' element={<ProductDetail />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/about" element={<About />} />
+            <Route element={<MainLayout/>}>
+                <Route path='/' element={<Home />} />
+                <Route path='/products' element={<ProductList />} />
+                <Route path='/products/:id' element={<ProductDetail />} />
+                <Route path="/cart" element={<Cart />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/about" element={<About />} />
+            </Route>
             <Route path="/*" element={<NotFound />} />
         </Routes>
     )
