@@ -9,5 +9,6 @@ export const ROUTES = {
     REGISTER : '/register',
     PRODUCTS : '/products',
     PRODUCT_DETAIL : '/products/:id',
+    PROFILE : '/profile',
     NOTFOUND : '*'
 }

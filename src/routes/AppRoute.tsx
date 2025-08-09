@@ -16,6 +16,7 @@ const Login = lazy(()=> import("@/pages/Login"))
 const Register = lazy(()=> import("@/pages/Register"))
 const Products = lazy(()=> import("@/pages/Products"))
 const Product_Detail = lazy(()=> import("@/pages/ProductsDetail"))
+const Profile = lazy(()=> import("@/pages/Profile"))
 const NotFound = lazy(()=> import("@/pages/NotFound"))
 
 const AppRoute: React.FC = () => {
@@ -33,6 +34,7 @@ const AppRoute: React.FC = () => {
                     <Route path={ROUTES.CHECKOUT} element={<Checkout/>}/>
                     <Route path={ROUTES.PRODUCTS} element={<Products/>}/>
                     <Route path={ROUTES.PRODUCT_DETAIL} element={<Product_Detail/>}/>
+                    <Route path={ROUTES.PROFILE} element={<Profile/>}/>
                 </Route>
                     
                     {/* form auth */}
