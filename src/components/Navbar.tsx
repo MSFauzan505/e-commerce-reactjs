@@ -25,9 +25,10 @@ const Navbar: React.FC<NavbarProps> = ({title, pageLinks, onSearch, profileLinks
         {/* search bar */}
         <div className="flex justify-between items-center">
             <Link to={'/'}>
-            <h1 className="font-bold text-3xl px-2 md:px-4">{title}</h1>
+            <h1 className="font-bold text-3xl px-2 md:px-4 text-blue-600">{title}</h1>
             </Link>
             <Input
+            placeholder="Search products..."
             value={searchValue}
             onChange={(e)=> setSearchValue(e.target.value)} 
             onKeyDown={(e)=>{
@@ -46,7 +47,7 @@ const Navbar: React.FC<NavbarProps> = ({title, pageLinks, onSearch, profileLinks
         <div className="w-full flex flex-wrap justify-center gap-3 sm:gap-5 md:gap-10 text-lg font-semibold ">
             {pageLinks.map((link, i)=>(
                 <Link key={i}  to={link.to}>
-                    <h1>{link.label}</h1>
+                    <h1 className="text-black hover:text-blue-600">{link.label}</h1>
                 </Link>
             ))}
         </div>

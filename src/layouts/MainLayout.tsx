@@ -30,7 +30,7 @@ const MainLayout = () => {
   return (
     <div className="w-full min-h-screen md:max-w-11/12 lg:max-w-10/12 mx-auto px-1 py-2 md:p-3 m-0  ">
         <Navbar
-        title="ShoppNig"
+        title="Mivora"
         profileLinks={navProfLinks}
         onSearch={handleSearch}
         pageLinks={navPageLinks}
